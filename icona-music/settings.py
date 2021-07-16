@@ -25,7 +25,7 @@ SECRET_KEY = 'f9*3q=t1w^47((hpnt#p!c478$tocv)3r3k12ufw^9*rm53ift'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['icona-music.herokuapp.com']
 
 import dj_database_url
 
