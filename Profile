@@ -1,0 +1,1 @@
+web: gunicorn icona_music.wsgi --log-file -
