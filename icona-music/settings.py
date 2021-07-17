@@ -76,8 +76,6 @@ WSGI_APPLICATION = 'icona-music.wsgi.application'
 
 
 
-
-
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
