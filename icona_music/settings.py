@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'icona-music.urls'
+ROOT_URLCONF = 'icona_music.urls'
 
 TEMPLATES = [
     {
@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'icona-music.wsgi.application'
+WSGI_APPLICATION = 'icona_music.wsgi.application'
 
 
 # Database
