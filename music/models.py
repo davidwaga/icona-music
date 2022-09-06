@@ -30,9 +30,9 @@ class TariffDetail(models.Model):
     isHeading = models.BooleanField(default=False)
     isSubHeading = models.BooleanField(default=False)
     parent_id = models.IntegerField(null=True, blank=True)
-    headingCode = models.CharField(max_length=512, null=True, blank=True)
+    headingCode = models.CharField(max_length=512, null=True)
     subheadingCode = models.CharField(max_length=250)
-    description = models.TextField(blank=True, max_length=512)
+    description = models.TextField(blank=True, max_length=512, null=True)
     unitOfQty = models.CharField(max_length=512, null=True, blank=True)
     rate = models.FloatField(null=True, blank=True)
     deleted = models.BooleanField(default=False)
@@ -48,7 +48,7 @@ class TariffDetail(models.Model):
 
 
 class Item(models.Model):
-    tariff_detail = models.ForeignKey(TariffDetail, on_delete=models.CASCADE, blank=False, verbose_name="Subheading")
+    tariff_detail = models.ForeignKey(TariffDetail, on_delete=models.CASCADE, null=True, blank=False, verbose_name="Subheading")
     name = models.CharField(max_length=250)
     description = models.TextField(blank=True, max_length=512)
     appliedGir = models.CharField(max_length=512, blank=False, null=True)
