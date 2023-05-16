@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'icona_music.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # Database
