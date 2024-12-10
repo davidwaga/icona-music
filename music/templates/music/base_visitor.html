@@ -34,8 +34,7 @@
         <div class="collapse navbar-collapse" id="topNavBar">
             <ul class="nav navbar-nav">
                 <li class="{% block register_active %}{% endblock %}"><a href="{% url 'music:register' %}">Register</a></li>
-                <li class="{% block login_active %}{% endblock %}"><a href="{% url
-                 'music:login_user' %}">Log In</a></li>
+                <li class="{% block login_active %}{% endblock %}"><a href="{% url 'music:login_user' %}">Log In</a></li>
             </ul>
         </div>
 
@@ -44,10 +43,10 @@
 {% block body %}
 {% endblock %}
 
-<script src="{% static 'js/bootstrap.min.js' %}"></script>
-<script src="{% static 'js/bootstrap-alerts.js' %}"></script>
-<script src="{% static 'js/main.js' %}"></script>
-<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'music/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'music/js/bootstrap-alerts.js' %}"></script>
+<script src="{% static 'music/js/main.js' %}"></script>
+<script src="{% static 'music/js/jquery.min.js' %}"></script>
 
 </body>
 </html>
